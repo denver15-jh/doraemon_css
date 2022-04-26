@@ -1,0 +1,362 @@
+:root{
+    /*Colors*/
+    --background-color: lightskyblue;
+    --blue-color: dodgerblue;
+    --white-color: white;
+    --black-color: black;
+    --red-color: red;
+    --yellow-color: yellow;
+    --transparent-color: transparent;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-doraemon{
+    position: relative;
+    background-color: var(--background-color);
+    height: 57rem;
+    width: 47rem;
+}
+
+.head{
+    position: absolute;
+    top: 2rem;
+    left: 9rem;
+    border: 1px solid var(--black-color);
+    height: 30.6rem;
+    width: 31rem;
+    border-radius: 100rem;
+    background-color: var(--blue-color);
+}
+
+.head__eyes{
+    width: 8.1rem;
+    height: 10rem;
+    border-radius: 50rem;
+    border: 1px solid var(--black-color);
+    background-color: var(--white-color);
+    z-index: 2;
+}
+
+.head__eyes--left{
+    position: absolute;
+    top: 3rem;
+    left: 7.5rem;
+}
+
+.head__eyes--right{
+    position: absolute;
+    top: 3rem;
+    right: 7.2rem;
+}
+
+.head__iris{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 100rem;
+    background-color: var(--black-color);
+}
+
+.head__iris--left{
+    position: absolute;
+    top: 5.3rem;
+    right: 1.3rem;
+}
+
+.head__iris--right{
+    position: absolute;
+    top: 5.3rem;
+    right: 3.4rem;
+}
+
+.head__nose{
+    position: absolute;
+    position: absolute;
+    top: 11.3rem;
+    left: 13.4rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 100rem;
+    border: 1px solid var(--black-color);
+    background-color: var(--red-color);
+    z-index: 2;
+}
+
+.head__chin{
+    position: absolute;
+    top: 7rem;
+    left: 2.4rem;
+    border: 1px solid var(--black-color);
+    height: 22rem;
+    width: 26.3rem;
+    border-radius: 100rem;
+    background: var(--white-color);
+    z-index: 1;
+}
+
+.head__mustache-division{
+    position: absolute;
+    top: 16rem;
+    left: 15.5rem;
+    width: 0.1rem;
+    height: 9rem;
+    background: var(--black-color);
+    z-index: 2;
+}
+
+.head__mustache{
+    width: 0.1rem;
+    height: 7rem;
+    background-color: var(--black-color);
+    z-index: 2;
+}
+
+.head__first-mustache--left{
+    position: absolute;
+    top: 12.5rem;
+    left: 9rem;
+    transform: rotate(106deg);
+}
+
+.head__second-mustache--left{
+    position: absolute;
+    top: 14.5rem;
+    left: 9rem;
+    transform: rotate(90deg);
+}
+
+.head__third-mustache--left{
+    position: absolute;
+    top: 16.5rem;
+    left: 9rem;
+    transform: rotate(74deg);
+}
+
+.head__first-mustache--right{
+    position: absolute;
+    top: 12.5rem;
+    right: 9rem;
+    transform: rotate(-106deg);
+}
+
+.head__second-mustache--right{
+    position: absolute;
+    top: 14.5rem;
+    right: 9rem;
+    transform: rotate(90deg);
+}
+
+.head__third-mustache--right{
+    position: absolute;
+    top: 16.5rem;
+    right: 9rem;
+    transform: rotate(-74deg);
+}
+
+.head__mouth{
+    position: absolute;
+    top: 7.6rem;
+    left: 3.4rem;
+    border-bottom: 1px solid var(--black-color);
+    border-left: 1px solid var(--transparent-color);
+    border-right: 1px solid var(--transparent-color);
+    height: 19rem;
+    width: 24.3rem;
+    border-bottom-left-radius: 50rem;
+    border-bottom-right-radius: 50rem;
+    background: transparent;
+    z-index: 1;
+}
+
+.necklace{
+    background-color: var(--red-color);
+    border: 1px solid var(--black-color);
+    position: absolute;
+    top: 29.5rem;
+    left: 12rem;
+    width: 25rem;
+    height: 3.1rem;
+    border-radius: 50rem;
+    z-index: 2;
+}
+
+.necklace__pendant{
+    position: absolute;
+    top: 1.6rem;
+    left: 10.1rem;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid var(--black-color);
+    border-radius: 100rem;
+    background-color: var(--yellow-color);
+    z-index: 2;
+}
+
+.necklace__division-landscape{
+    position: absolute;
+    bottom: 0.8rem;
+    left: 2.4rem;
+    width: 0.1rem;
+    height: 4.7rem;
+    background-color: var(--black-color);
+    transform: rotate(90deg);
+}
+
+.necklace__black-circle{
+    position: absolute;
+    top: 2.1rem;
+    left: 1.6rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 100rem;
+    background-color: var(--black-color);
+}
+
+.necklace__division-portrait{
+    position: absolute;
+    top: 3.8rem;
+    left: 2.4rem;
+    width: 0.1rem;
+    height: 1rem;
+    background-color: var(--black-color);
+}
+
+.body-trunk{
+    position: absolute;
+    top: 31.6rem;
+    left: 13.7rem;
+    border: 1px solid var(--black-color);
+    height: 18.9rem;
+    width: 22.2rem;
+    background-color: var(--blue-color);
+    z-index: 1;
+}
+
+.body-trunk__arm{
+    border: 1px solid var(--black-color);
+    height: 4.9rem;
+    width: 8.2rem;
+    background-color: var(--blue-color);
+    z-index: 1;  
+}
+
+.body-trunk__arm--left{
+    position: absolute;
+    top: 2.6rem;
+    right: 18.4rem;
+    transform: rotate(-48deg);
+}
+
+.body-trunk__arm--right{
+    position: absolute;
+    top: 2.6rem;
+    left: 18.4rem;
+    transform: rotate(48deg);
+}
+
+.body-trunk__hide-arm-lines{
+    position: absolute;
+    height: 8.2rem;
+    width: 22.1rem;
+    background-color: var(--blue-color);
+    z-index: 1;
+}
+
+.body-trunk__hand{
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 100rem;
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+    z-index: 2;
+}
+
+.body-trunk__hand--left{
+    position: absolute;
+    bottom: -0.8rem;
+    right: 7rem;
+}
+
+.body-trunk__hand--right{
+    position: absolute;
+    bottom: -0.8rem;
+    left: 7rem;
+}
+
+.body-trunk__paunch{
+    position: absolute;
+    bottom: 4.2rem;
+    left: 2.9rem;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 100rem;
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+    z-index: 2;
+}
+
+.body-trunk__paunch-line{
+    position: absolute;
+    top: 7.5rem;
+    left: 1.8rem;
+    border: 1px solid var(--black-color);
+    height: 7rem;
+    width: 12.3rem;
+    border-bottom-left-radius: 50rem;
+    border-bottom-right-radius: 50rem;
+    background: transparent;
+    z-index: 1;
+}
+
+.body-trunk__between-legs{
+    position: absolute;
+    position: absolute;
+    top: 16.2rem;
+    left: 9.5rem;
+    width: 3rem;
+    height: 2.5rem;
+    border-top-left-radius: 100rem;
+    border-top-right-radius: 100rem;
+    background-color: var(--white-color);
+    z-index: -1;
+}
+
+.body-trunk__legs{
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+    width: 15rem;
+    height: 3.8rem;
+    border-radius: 50rem;
+    z-index: 2;
+    box-shadow: 0px 5px 8px var(--black-color);
+}
+
+.body-trunk__legs--left{
+    position: absolute;
+    top: 18.5rem;
+    left: 11.2rem;
+}
+
+.body-trunk__legs--right{
+    position: absolute;
+    top: 18.5rem;
+    right: 11.2rem;
+}
